@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Task4\Task4.Logic.csproj">
+    <ProjectReference Include="..\Task4.Logic\Task4.Logic.csproj">
       <Project>{c5da909a-c9b6-4c06-83ea-07f83d54108c}</Project>
       <Name>Task4.Logic</Name>
     </ProjectReference>

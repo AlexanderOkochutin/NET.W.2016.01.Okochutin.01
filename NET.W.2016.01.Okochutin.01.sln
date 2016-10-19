@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Logic", "Task4\Task4.Logic.csproj", "{C5DA909A-C9B6-4C06-83EA-07F83D54108C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Logic", "Task4.Logic\Task4.Logic.csproj", "{C5DA909A-C9B6-4C06-83EA-07F83D54108C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.ConsoleUI", "Task4.ConsoleUI\Task4.ConsoleUI.csproj", "{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}"
 EndProject
