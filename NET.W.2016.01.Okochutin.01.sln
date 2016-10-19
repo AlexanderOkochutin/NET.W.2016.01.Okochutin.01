@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Logic", "Task4\Task4.Logic.csproj", "{C5DA909A-C9B6-4C06-83EA-07F83D54108C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.ConsoleUI", "Task4.ConsoleUI\Task4.ConsoleUI.csproj", "{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5DA909A-C9B6-4C06-83EA-07F83D54108C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DA909A-C9B6-4C06-83EA-07F83D54108C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DA909A-C9B6-4C06-83EA-07F83D54108C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DA909A-C9B6-4C06-83EA-07F83D54108C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
