@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Logic", "Task4.Logic\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.ConsoleUI", "Task4.ConsoleUI\Task4.ConsoleUI.csproj", "{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.Logic.Test", "Task4.Logic.Test\Task4.Logic.Test.csproj", "{BE8ED8AF-B0C5-4649-87BD-274B4BCF4DB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC39B148-44C8-4E28-B1B2-EEB5ACC2F15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE8ED8AF-B0C5-4649-87BD-274B4BCF4DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE8ED8AF-B0C5-4649-87BD-274B4BCF4DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE8ED8AF-B0C5-4649-87BD-274B4BCF4DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8ED8AF-B0C5-4649-87BD-274B4BCF4DB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
