@@ -38,7 +38,7 @@ namespace Task4.ConsoleUI
                         {
                             Console.WriteLine("****Please check input information, and try again!****");
                             Console.WriteLine("****example of input info: -m 1,2,3  or  -m 1 2 3 ****");
-                            inputData = Console.ReadLine();
+                            inputData = Console.ReadLine(); // in case of fail repeat enter of info
                         }
                     }
                 }
@@ -70,7 +70,7 @@ namespace Task4.ConsoleUI
                         {
                             Console.WriteLine("****Please check input information, and try again!****");
                             Console.WriteLine("****example of input info: -r min,max,count  or  -r min max count ****");
-                            inputData = Console.ReadLine();
+                            inputData = Console.ReadLine(); // in case of fail repeat enter of info
                         }
                     }
                 }
