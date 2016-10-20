@@ -13,7 +13,7 @@ namespace Task4.ConsoleUI
             do
             {
                 Console.WriteLine("Enter array of int in next format  -m a0,a1,a2  or -r min,max,count "); // -m manual enter array in next format 1,2,3... or 1 2 3
-                Console.WriteLine("example of input info: -m 1,14,3,8,19 or -r -5,20,10");                  // -r random array in range from min to max
+                Console.WriteLine("example of input info: -m 1,14,3,8,19 or -r -5,20,10");                 // -r random array in range from min to max and count of elem
                 Console.WriteLine(new string('*',67));
                 string inputData = Console.ReadLine(); // get input data in format -param a,b,c...
                 Random rand = new Random();
@@ -42,6 +42,7 @@ namespace Task4.ConsoleUI
                         }
                     }
                 }
+
                 if (cmdParam == "-r") // random input array
                 {
                     while (tryAgain) // in case of fail repeat
@@ -55,6 +56,7 @@ namespace Task4.ConsoleUI
                             }
 
                             rsltArray = new int[randParam[2]];
+                            Console.WriteLine("not sorted array:");
                             for (int i = 0; i < randParam[2]; i++)
                             {
                                 rsltArray[i] = rand.Next((int)randParam[0], (int)randParam[1]);
@@ -73,17 +75,17 @@ namespace Task4.ConsoleUI
                     }
                 }
 
-                if (tryAgain == false)
+                if (tryAgain == false) // if parse is successfull than choose type of sort increase or decrease
                 {
                     Console.WriteLine("enter -i for increase sort or -d for decrease sort");
                     string sortType = Console.ReadLine();
-                    if (sortType == "-i")
+                    if (sortType == "-i") // increase
                     {
                         rsltArray.MergeSort(new ExtensionToolsForArray.IncComparer<int>());
                         Console.WriteLine("Sorted array");
                     }
 
-                    else if (sortType == "-d")
+                    else if (sortType == "-d") // decrease
                     {
                         rsltArray.MergeSort(new ExtensionToolsForArray.DecComparer<int>());
                         Console.WriteLine("Sorted array");
@@ -98,10 +100,12 @@ namespace Task4.ConsoleUI
                         Console.WriteLine(i);
                     }
                 }
-                else
+
+                else // if parse fail repeat enter info
                 {
                     Console.WriteLine("check input information!");
                 }
+
                 Console.WriteLine("enter 'stop' to exit program or press 'enter' to continue");
 
             } while (Console.ReadLine() != "stop");
