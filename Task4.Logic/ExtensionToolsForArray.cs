@@ -22,6 +22,9 @@ namespace Task4.Logic
             MergeSort<T>(array, 0, array.Length - 1, comparer);
         }
 
+        /// <summary>
+        /// Recursive algorithm of merge sort
+        /// </summary>
         private static void MergeSort<T>(T[] array, int left, int right, IComparer<T> comparer)
         {
             if (left < right)
@@ -33,6 +36,9 @@ namespace Task4.Logic
             }
         }
 
+        /// <summary>
+        /// Algorithm of merge two parts in one sorted
+        /// </summary>
         private static void Merge<T>(T[] array, int left, int right, IComparer<T> comparer)
         {
             T[] buff = new T[right - left + 1];
