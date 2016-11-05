@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Task4.Logic
 {
+    /// <summary>
+    /// Extension of tools to work with arrays
+    /// </summary>
     public static class ExtensionToolsForArray
     {
+        /// <summary>
+        /// MergeSort of T array
+        /// </summary>
+        /// <typeparam name="T">type of elements in array</typeparam>
+        /// <param name="array">input array</param>
+        /// <param name="comparer">comparer for type T</param>
         public static void MergeSort<T>(this T[] array, IComparer<T> comparer)
         {
             MergeSort<T>(array, 0, array.Length - 1, comparer);
@@ -56,30 +65,7 @@ namespace Task4.Logic
                 array[i] = buff[i - left];
             }
         }
-
-        public class IncComparer<T> : IComparer<T> where T : IComparable<T>
-        {
-            public int Compare(T x, T y)
-            {
-                if (x.CompareTo(y) > 0) { return 1; }
-                else if (x.CompareTo(y) < 0)
-                { return -1; }
-                else { return 0; }
-            }
-        }
-
-        public class DecComparer<T> : IComparer<T> where T : IComparable<T>
-        {
-            public int Compare(T x, T y)
-            {
-                if (x.CompareTo(y) < 0) { return 1; }
-                else if (x.CompareTo(y) > 0)
-                { return -1; }
-                else { return 0; }
-            }
-        }
     }
-   
 }
 
 

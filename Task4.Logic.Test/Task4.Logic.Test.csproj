@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ExtensionToolsForArrayTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestComparers.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Task4.Logic\Task4.Logic.csproj">

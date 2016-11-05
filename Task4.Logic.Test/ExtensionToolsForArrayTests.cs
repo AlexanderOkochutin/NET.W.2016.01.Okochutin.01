@@ -22,10 +22,10 @@ namespace Task4.Logic.Test
                 rstExpected0[i] = a;
             }
             Array.Sort(rstExpected0);
-            testArray0.MergeSort(new ExtensionToolsForArray.IncComparer<int>());
+            testArray0.MergeSort(new IncComparer<int>());
             CollectionAssert.AreEqual(rstExpected0, testArray0);
             Array.Reverse(rstExpected0);
-            testArray1.MergeSort(new ExtensionToolsForArray.DecComparer<int>());
+            testArray1.MergeSort(new DecComparer<int>());
             CollectionAssert.AreEqual(rstExpected0, testArray1);
         }
 
